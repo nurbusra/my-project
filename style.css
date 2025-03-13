@@ -1,0 +1,1122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap');
+
+.navbar {
+  background-color: #0000005a;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+.navbar img {
+  max-width: 250px;/* Logo boyutunu*/
+}
+
+.navbar-nav {
+  margin: auto;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 10px;
+}
+
+.nav-link {
+  color: white !important;
+}
+.btn-corner {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  border-radius: 0px;
+  transition: background-color 0.3s, color 0.3s; 
+  color: white;
+  background-color: #e4bf57;
+  border-color: #e4bf57;
+}
+
+.btn-corner:hover {
+  background-color: white; 
+  color: #e4bf57; 
+  border-color: white;
+}
+
+/*navbar menu */
+#navbar-icon{
+font-size: 25px;
+display: none;
+margin-left: 20px;
+}
+
+/* Mobil Uyumlu*/
+@media (max-width: 767px) {
+.navbar img {
+    max-width: 200px; 
+}
+
+.navbar-nav {
+    text-align: center; 
+}
+
+.navbar-nav .nav-item {
+    margin: 10px 0; 
+}
+
+.btn-corner {
+    top: 30px; 
+    right: 10px; 
+}
+
+#navbar-icon {
+    display: inline-block; 
+}
+
+.navbar-collapse {
+    display: none; 
+}
+
+.navbar-toggler {
+    display: block; 
+}
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+/*Slider*/
+
+.carousel-caption h5{
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 150px;
+  color: #ffffff;
+  font-family: "Herr Von Muellerhoff" ,cursive;
+  letter-spacing: 0.3rem;
+  font-weight: 100;
+}
+.carousel-caption p{
+  text-align: center;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+
+/* Mobil Uyumlu */
+@media (max-width: 767px) {
+  .carousel-caption h5 {
+      font-size: 80px; 
+      margin-bottom: 15px; 
+      letter-spacing: 0.2rem; 
+  }
+
+  .carousel-caption p {
+      font-size: 18px; 
+  }
+  .carousel-item img {
+    width: 100vw; /* Ekran genişliği kadar genişletir */
+    height: 100vw; /* Ekran genişliği kadar yükseklik verir, kare oluşturur */
+    object-fit: cover; /* Resmi, içerisine sığdırmak için ekranı tamamen kaplayacak şekilde boyutlandırır */
+}
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+/*text alanı*/
+
+.container {
+    text-align: center; /*Welcome resmi için */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container-icon {
+    text-align: center; /*icon'un ortalanması için */
+    margin-top: 40px;
+    margin-bottom: 40px;
+} 
+
+/* Mobil uyumlu icon CSS */
+@media only screen and (max-width: 600px) {
+  .container-icon {
+      margin-top: 20px; 
+      margin-bottom: 20px; 
+  }
+  
+  .container-icon img {
+      max-width: 60px; 
+  }
+}
+
+.text{
+    margin-bottom: 35px;
+    text-align: center;
+    font-size: 60px;
+    color: #01464f;
+    font-family: "Herr Von Muellerhoff" ,cursive;
+    letter-spacing: 0.3rem;
+    font-weight: 100;
+}
+
+.text-2, .text-3 {
+    color: #737373;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Romantic Lovely';
+    text-transform: capitalize;
+    padding-left: 100px; 
+    padding-right: 100px; 
+}
+
+
+/* Mobil uyumlu CSS */
+@media only screen and (max-width: 767px) {
+  .container {
+      text-align: center; 
+  }
+
+  .text {
+      font-size: 30px; 
+      letter-spacing: 0.1rem; 
+  }
+
+  .text-2, .text-3 {
+      font-size: 14px; 
+      padding-left: 10px; 
+      padding-right: 10px; 
+  }
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/*about*/
+
+.about{
+    margin-bottom: 100px;
+}
+
+.about-tittle{
+    margin: 60px 0;
+}
+
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about-img{
+    width: 40%;
+}
+
+.about-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text{
+    width: 40%;
+}
+
+h4{
+    margin-bottom: 35px;
+    text-align: center;
+    font-size: 50px;
+    color: #01464f;
+    font-family: "Herr Von Muellerhoff" ,cursive;
+    letter-spacing: 0.3rem;
+    font-weight: 100;
+}
+
+.about-text p{
+    font-size: 15px;
+    text-align: center;
+    color: #737373;
+}
+.about-text a{
+  color: #003037;
+  text-decoration: none;
+  font-weight: bold;
+  font-family:"Herr Von Muellerhoff" ,cursive ; 
+  font-size: 30px;
+  letter-spacing: 0.2rem;
+}
+.about-text a:hover{
+  color: #96989a;
+}
+
+/* Mobil uyumlu CSS */
+
+@media only screen and (max-width: 767px) {
+  .about-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .about-img,
+  .about-text {
+      width: 90%;
+  }
+
+  h4 {
+      margin-top: 10px;
+      font-size: 30px;
+  }
+
+.about-text a {
+    font-size: 25px;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/*portfolio*/
+
+.portfolio{
+  display: flex;
+}
+.portfolio-item{
+  width: 25%;
+  height: 300px;
+  overflow: hidden;  /*tasmalari engellemek icin*/
+  position: relative;
+}
+
+.portfolio-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /*resimlerin en boy oranini*/
+  transition: .5s;
+}
+
+.overlay{
+  width: 100%;
+  height: 100%;
+  background-color: #003037;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  opacity: 0.8;
+  color: #fff;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+}
+
+.portfolio-item:hover .overlay{
+  top: 0;
+  
+}
+
+.portfolio-item:hover img{
+  transform: scale(1.1); /*verilen elemanların x ve y duzleminde olceklendiriyor*/
+}
+
+/* Mobil Uyumlu CSS */
+
+@media (max-width: 767px) {
+  .portfolio {
+      flex-wrap: wrap; /* Mobil cihazlarda portföy öğelerini alt alta sıralamak için */
+  }
+
+  .portfolio-item {
+    position: relative; /* Görselin üzerindeki overlay'ı kontrol etmek için */
+    width: 50%; 
+    height: 113px; 
+    overflow: hidden;
+}
+
+  .portfolio-item img {
+      height: auto; 
+      width: 100%; 
+      object-fit: cover;
+  }
+
+.overlay {
+    font-size: 30px; /* Mobil cihazlarda overlay yazı boyutunu küçültmek */
+    opacity: 0.8; /* Başlangıçta overlay'ı görünmez yapmak */
+    position: absolute; /* Overlay'ı görselin üstüne yerleştirmek */
+    top: 100%; /* Overlay'ı görselin üstünde hizalamak */
+    left: 0; /* Overlay'ı görselin solunda hizalamak */
+    width: 100%; /* Overlay'ı görselin genişliğine uygun hizalamak */
+    height: 100%; /* Overlay'ı görselin yüksekliğine uygun hizalamak */
+    background-color: #003037;
+    display: flex; /* Overlay içeriği dikey hizalamak için */
+    justify-content: center; /* Overlay içeriği ortalamak için */
+    align-items: center; /* Overlay içeriği ortalamak için */
+    color: #fff;
+    transition: .5s;
+}
+
+.portfolio-item:hover .overlay {
+    top: 0; /* Hover olduğunda overlay'ı görünür yapmak */
+}
+
+.portfolio-item:hover img{
+  transform: scale(1.1); 
+}
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+/*Contact us*/
+
+.contact-us{
+  padding: 10px 0;
+}
+
+.contact-us h4{
+  margin-bottom: 35px;
+  text-align: center;
+  font-size: 60px;
+  color: #01464f;
+  font-family: "Herr Von Muellerhoff" ,cursive;
+  letter-spacing: 0.3rem;
+  font-weight: 100;
+}
+
+.contact-us-content{
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-evenly; /*yatayda hizalama*/
+}
+
+.contact-us-item{
+  display: flex;
+  align-items: center;  /*dikeyde hizalama*/
+  flex-basis: 33%; /*belirli bir alanı kaplasın*/
+  margin-bottom: 100px;
+  flex-direction: column;  
+}
+
+.contact-us-item i{
+  font-size: 25px;
+  margin-bottom: 30px;
+  color: #003037;
+}
+
+.contact-us-item p{
+  font-size: 14px;
+  line-height: 30px;
+
+}
+
+
+@media (max-width: 767px) {
+.contact-us{
+  padding: 20px 0; 
+}
+
+.contact-us h4{
+  margin-bottom: 20px; 
+  font-size: 40px; 
+  color: #01464f;
+  font-family: "Herr Von Muellerhoff", cursive;
+  letter-spacing: 0.2rem; 
+  font-weight: 100;
+}
+
+.contact-us-content{
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+}
+
+.contact-us-item{
+  display: flex;
+  align-items: center;
+  flex-basis: 90%; 
+  margin-bottom: 50px; 
+  flex-direction: column;
+  text-align: center; 
+}
+
+.contact-us-item i{
+  font-size: 20px; 
+  margin-bottom: 20px; 
+  color: #003037;
+}
+
+.contact-us-item p{
+  font-size: 14px;
+  line-height: 24px; 
+}
+}
+/*--------------------------------------------------------------------------------------------------*/
+
+/*kayan fotograflar*/
+
+
+.slideshow-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slideshow-images {
+  display: flex;
+  animation: slide 20s linear infinite; 
+}
+
+.slideshow-images img {
+  max-width: 500px;
+  height: auto;
+  margin-right: 10px; 
+}
+
+@keyframes slide {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 767px) {
+.slideshow-container {
+  width: 70%;
+  overflow: hidden;
+}
+
+.slideshow-images {
+  display: flex;
+  animation: slide 15s linear infinite; 
+  overflow-x: auto; 
+  scroll-snap-type: x mandatory; 
+  -webkit-overflow-scrolling: touch; /* iOS cihazlarda daha iyi kaydırma performansı için */
+}
+
+.slideshow-images img {
+  max-width: 100%; 
+  height: auto;
+  margin-right: 5px; 
+  scroll-snap-align: start; 
+}
+
+@keyframes slide {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/*footer*/
+#footer {
+    background-color: #01464f;
+    padding: 40px 0;
+  }
+
+  .footer-menu img {
+    max-width: 100%;
+  }
+
+  .footer-menu p {
+    font-size: 14px;
+    color: #ffffff;
+  }
+
+  .footer-menu h5 {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  .menu-list {
+    padding: 0;
+  }
+
+  .menu-item a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+
+  .menu-item a:hover {
+    color: #96989a;
+  }
+
+  .social-links ul {
+    padding: 0;
+  }
+
+  .social-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+
+  .social-links a:hover {
+    color: #96989a;
+  }
+
+  .contact-item {
+    border-right: 1px solid #dee2e6;
+  }
+
+  .contact-item p {
+    font-size: 14px;
+    color: #6c757d;
+  }
+
+  .contact-item a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .contact-item a:hover {
+    color: #96989a;
+  }
+
+  .copyright {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ffffff;
+    font-size: 14px;
+    color: #96989a;
+  }
+  .c-logo{
+    color: #01464f;
+  }
+
+  .copyright a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .copyright a:hover {
+    color: #96989a;
+  }
+
+/*----------------------------------------------------------------------------------------*/
+/*gallery page*/
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+@media (max-width: 767px) {
+  .gallery {
+    flex-direction: column; 
+    padding: 0; 
+  }
+
+  .column {
+    flex: 50%; 
+    max-width: 50%;
+    padding: 5px 5px; 
+    box-sizing: border-box; 
+  }
+}
+
+
+/*----------------------------------------------------------------------------------------*/
+/*contact*/
+
+.container-contact {
+  text-align: center;
+    margin-top: 20px;
+}
+
+.contact-info {
+  display: inline-block;
+  padding: 20px;
+}
+.contact-info p{
+  font-weight: bold;
+  color: #01464f;
+}
+
+.map {
+  text-align: center;
+  padding: 20px;
+}
+ 
+@media (max-width: 767px) {
+.contact-info {
+  display: block; 
+  padding: 5px; 
+}
+
+ .map {
+    padding: 5px; 
+  }
+
+.map iframe {
+  width: 100%; 
+  height: 300px; /* Sabit yukseklik belirleme */
+}
+}
+
+/*----------------------------------------------------------------------------------------*/
+/*rooms*/
+
+.rooms{
+  margin-bottom: 100px;
+}
+
+.rooms-tittle{
+  margin: 60px 0;
+}
+
+.rooms-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.rooms-img{
+  width: 40%;
+}
+
+.rooms-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rooms-text{
+  width: 40%;
+}
+
+.rooms-text p{
+  font-size: 15px;
+  text-align: center;
+  color: #737373;
+}
+.rooms-text a{
+  color: #003037;
+  text-decoration: none;
+  font-weight: bold;
+  font-family:"Herr Von Muellerhoff" ,cursive ; 
+  font-size: 30px;
+  letter-spacing: 0.2rem;
+}
+.rooms-text a:hover{
+  color: #96989a;
+}
+
+@media (max-width: 767px) {
+  .rooms {
+    margin-bottom: 50px; 
+  }
+  
+  .rooms-tittle {
+    margin: 30px 0; 
+  }
+  
+  .rooms-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+  .rooms-img {
+    width: 70%; 
+    max-width: 300px; 
+  }
+  
+  .rooms-img img {
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+  }
+  
+  .rooms-text {
+    width: 90%; 
+  }
+  
+  .rooms-text p {
+    font-size: 14px; 
+    text-align: center;
+    color: #737373;
+  }
+  
+  .rooms-text a {
+    color: #003037;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px; 
+    letter-spacing: 0.1rem; 
+    font-family: "Herr Von Muellerhoff", cursive;
+  }
+  
+  .rooms-text a:hover {
+    color: #96989a;
+  }  
+}
+
+
+/*----------------------------------------------------------------------------------------*/
+/*events*/
+
+h6{
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.events{
+  margin-bottom: 100px;
+}
+
+.events-tittle{
+  margin: 60px 0;
+}
+
+.events-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.events-img{
+  width: 40%;
+}
+
+.events-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.events-text{
+  width: 40%;
+}
+
+.events-text p{
+  font-size: 15px;
+  text-align: center;
+  color: #737373;
+}
+.events-text a{
+  color: #003037;
+  text-decoration: none;
+  font-weight: bold;
+  font-family:"Herr Von Muellerhoff" ,cursive ; 
+  font-size: 30px;
+  letter-spacing: 0.2rem;
+}
+.events-text a:hover{
+  color: #96989a;
+}
+
+@media (max-width: 767px) {
+  h6 {
+    margin-bottom: 20px; 
+    text-align: center;
+  }
+  
+  .events {
+    margin-bottom: 50px; 
+  }
+  
+  .events-tittle {
+    margin: 30px 0; 
+  }
+  
+  .events-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  .events-img {
+    width: 70%; 
+    max-width: 300px; 
+  }
+  
+  .events-img img {
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+  }
+  
+  .events-text {
+    width: 90%; 
+  }
+  
+  .events-text p {
+    font-size: 14px; 
+    text-align: center;
+    color: #737373;
+  }
+  
+  .events-text a {
+    color: #003037;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px; 
+    letter-spacing: 0.1rem; 
+    font-family: "Herr Von Muellerhoff", cursive;
+  }
+  
+  .events-text a:hover {
+    color: #96989a;
+  }
+  
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+/*inner room */
+
+.icons-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.icons {
+  position: relative; 
+  justify-content: center;
+  display: flex;
+
+}
+
+.icons img {
+  width: 50px; 
+  height: auto;
+  margin-right: 20px; 
+
+}
+
+.inner-img {
+  display: none;
+}
+
+.inner-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .icons-container {
+    width: 100%;
+    overflow: auto; 
+  }
+  
+  .icons {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  .icons img {
+    width: 40px; 
+    height: auto;
+    margin-right: 10px; 
+  }
+  
+  .inner-img {
+    display: none;
+  }
+  
+  .inner-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .icons a {
+      width: 20%; 
+      text-align: center; 
+  }
+}
+
+
+
+
+/*---------------------------------------------------------------------------------------*/
+
+/*rezervasyon blogu*/
+
+.reservation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 22vh;
+}
+
+.reservation-container form {
+  border: 2px solid var(--border-color, #e8e6e6);
+  border-radius: 10px; 
+  padding: 30px;
+  width: 90%; 
+  max-width: 1000px; 
+  background-color: #f7f8f8;
+}
+
+.reservation-container .row {
+  margin-bottom: 0; 
+}
+
+.reservation-container label {
+  display: block;
+}
+
+.reservation-container .form-group {
+  margin-bottom: 25px; 
+}
+
+.reservation-container .btn {
+  width: 150px;
+  background-color: var(--button-color, #e4bf57); 
+  border-color: var(--button-color, #e4bf57);
+}
+
+.reservation-container .btn:hover {
+  background-color: #ffffff;
+  color: #e4bf57;
+}
+
+.reservation-container .form-group span {
+  display: block;
+  font-size: 14px;
+  color: #888;
+}
+
+
+@media (max-width: 768px) {
+  .reservation-container form {
+      width: 95%; 
+  }
+  .reservation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 74vh;
+  }
+
+  .reservation-container .form-group {
+    margin-bottom: 0px;
+}
+  .reservation-container .row {
+    text-align: center;
+  }
+
+  .reservation-container label {
+    display: inline-block;
+  }
+}
+
+
+/*------------------------------------------------------------------------------------*/
+
+    /* CSS Kodları */
+    .bg {
+      background-color: #00000069; 
+    }
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      background-color: #003037;
+      overflow-x: hidden;
+      transition: 0.5s;
+    }
+    .sidebar-content {
+      position: relative;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+    }
+    .sidebar a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 30px;
+      color: #ffffff;
+      display: block;
+      transition: 0.3s;
+    }
+    .sidebar a:hover, .sidebar a:focus {
+      color: #f1f1f1;
+    }
+    .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+    }
+    @media screen and (max-height: 450px) {
+      .sidebar {overflow-y: auto;}
+      .sidebar a {font-size: 20px;}
+      .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+      }
+    }
+
+    /**/
+
+
+    .welcome-sign {
+      text-align: center;
+      margin: 20px auto;
+      margin-bottom: -140px;
+      padding: 20px;
+      width: 80%;
+    }
+  
+    .welcome-h1 {
+      font-size: 13em; /* Daha büyük başlık için 3em kullanabilirsiniz */
+      font-family: "Herr Von Muellerhoff" ,cursive;
+      margin-top: 0;
+      color: #afb0b298;
+    }
+  
+    .welcome-h2 {
+      font-size: 5em;
+      color: #003037;
+      margin-top: -20px; 
+      position: relative; 
+      top: -260px; 
+    }
+  
+    .welcome-h3{
+      font-size: 2em;
+      color: #003037;
+      margin-top: -20px; 
+      position: relative; 
+      top: -240px; 
+    }
